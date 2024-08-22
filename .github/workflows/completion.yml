@@ -5,7 +5,12 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: all entries made
-      run: bash ./.github/workflows/check-complete.sh
+      - uses: actions/checkout@v2
+
+      - name: Set execute permission
+        run: chmod +x ./.github/workflows/check-complete.sh
+
+      - name: all entries made
+        run: bash ./.github/workflows/check-complete.sh

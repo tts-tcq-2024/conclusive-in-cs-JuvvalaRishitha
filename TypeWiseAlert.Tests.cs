@@ -18,7 +18,7 @@ public class TypeWiseAlertTests
     public void CheckAndAlert_SendsToController()
     {
         var batteryChar = new TypeWiseAlert.BatteryCharacter { coolingType = TypeWiseAlert.CoolingType.PASSIVE_COOLING, brand = "BrandX" };
-        TypewiseAlert.CheckAndAlert(TypeWiseAlert.AlertTarget.TO_CONTROLLER, batteryChar, 36);
+        TypeWiseAlert.CheckAndAlert(TypeWiseAlert.AlertTarget.TO_CONTROLLER, batteryChar, 36);
         // Validate console output, possibly using a custom TextWriter
     }
 
@@ -26,7 +26,7 @@ public class TypeWiseAlertTests
     public void CheckAndAlert_SendsToEmail()
     {
         var batteryChar = new TypeWiseAlert.BatteryCharacter { coolingType = TypeWiseAlert.CoolingType.PASSIVE_COOLING, brand = "BrandX" };
-        TypeWiseAlert.CheckAndAlert(TypewiseAlert.AlertTarget.TO_EMAIL, batteryChar, 36);
+        TypeWiseAlert.CheckAndAlert(TypeWiseAlert.AlertTarget.TO_EMAIL, batteryChar, 36);
         // Validate console output, possibly using a custom TextWriter
     }
 }
